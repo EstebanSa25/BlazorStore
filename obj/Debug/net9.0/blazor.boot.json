@@ -1,8 +1,9 @@
 {
   "mainAssemblyName": "Esteban",
   "resources": {
-    "hash": "sha256-Js9wzA1IlhizSW+xww4vCo7HNnrS9e11poq0uYreGHI=",
+    "hash": "sha256-G7qxTIvhaE/78WbW2Fb+tyosli5VpIfS4lgAHyomdtw=",
     "fingerprinting": {
+      "Blazored.Toast.4gbrhkrum5.wasm": "Blazored.Toast.wasm",
       "Microsoft.AspNetCore.Authorization.gf26ou9jj9.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.v3fd2n5hlr.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Forms.n0ihslit6r.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
@@ -195,23 +196,23 @@
       "netstandard.d82br99ghv.wasm": "netstandard.wasm",
       "System.Private.CoreLib.wejp19zmu1.wasm": "System.Private.CoreLib.wasm",
       "dotnet.js": "dotnet.js",
-      "dotnet.native.hvg7u8bimp.js": "dotnet.native.js",
-      "dotnet.native.3c4wvb350q.wasm": "dotnet.native.wasm",
-      "dotnet.runtime.cymp1amu5g.js": "dotnet.runtime.js",
+      "dotnet.native.8bti36lthm.js": "dotnet.native.js",
+      "dotnet.native.tr0cyonrwt.wasm": "dotnet.native.wasm",
+      "dotnet.runtime.tsg4gsv2hg.js": "dotnet.runtime.js",
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "Esteban.uc8yon776o.wasm": "Esteban.wasm",
-      "Esteban.7hmuvc5ga9.pdb": "Esteban.pdb"
+      "Esteban.o9b4tmypfw.wasm": "Esteban.wasm",
+      "Esteban.yvgx9eql4p.pdb": "Esteban.pdb"
     },
     "jsModuleNative": {
-      "dotnet.native.hvg7u8bimp.js": "sha256-LX9rFEWGVxhkOkAVPG0w5RxPwzPBlEUz6dQNjWS7M+M="
+      "dotnet.native.8bti36lthm.js": "sha256-HFADmT26AarHu4tMjFaTPxINmQjBJGtdPN+CKjtNMFE="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.cymp1amu5g.js": "sha256-dCmS9Zx4egtLYSUgTI3R6gMS+Yg8MkzxW1CgEMJKAEw="
+      "dotnet.runtime.tsg4gsv2hg.js": "sha256-82FoDmY+LsehdN2u8aSGEutGEKXJHcYaSX/3zptbsCw="
     },
     "wasmNative": {
-      "dotnet.native.3c4wvb350q.wasm": "sha256-89jyB8DlCnV2BPMV477jOe1Sm0WXwVf8RuoSPsj4Ym8="
+      "dotnet.native.tr0cyonrwt.wasm": "sha256-F3/BArijJUydqmwcdWeW3LYyYHBRSu2+pyy8GL1jTV0="
     },
     "icu": {
       "icudt_CJK.tjcz0u77k5.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -223,6 +224,7 @@
       "System.Private.CoreLib.wejp19zmu1.wasm": "sha256-iEPGi1OS5IQuHAewjUSiRdMd3+Xdkmlu0NIN8J253Vc="
     },
     "assembly": {
+      "Blazored.Toast.4gbrhkrum5.wasm": "sha256-tCNYnYuB69ZO7+n7obUv//+KkNP809fARvATEkvPug4=",
       "Microsoft.AspNetCore.Authorization.gf26ou9jj9.wasm": "sha256-zPFXeeGdBs4UPBpbat5NEN4EI/Ig1eV4jzbgb6Pcurc=",
       "Microsoft.AspNetCore.Components.v3fd2n5hlr.wasm": "sha256-uxsAoGDTMmkORHVq8kyh/BB0ebk1uKUb97qNJkwZeRA=",
       "Microsoft.AspNetCore.Components.Forms.n0ihslit6r.wasm": "sha256-iRpIK6WbESudNMb4Gn8EobxIwBTS9CaF2sk8Lf6gpxo=",
@@ -412,10 +414,10 @@
       "WindowsBase.5lai2eowco.wasm": "sha256-GcDi5293y2A7oSiFYTbBTUe0d+ISbvgeel4ZNd8KkPM=",
       "mscorlib.wzkfrp7u5k.wasm": "sha256-9PjsU0gaxxz5Vyw++p9DeYUWLsaXbaMS2RbX6wmTUmk=",
       "netstandard.d82br99ghv.wasm": "sha256-DS8keXxU4eQpa1kIoiFxOA2Ii2g9hoNWSaVi8F8AnIE=",
-      "Esteban.uc8yon776o.wasm": "sha256-zmKnuG/BVj09eImLUaU9BJan0rMaNAXPCeiFU7ZSlp4="
+      "Esteban.o9b4tmypfw.wasm": "sha256-9DjYqLWRsouZcxcR/PicQkQYHrTkSAYPvhhGglvOpNk="
     },
     "pdb": {
-      "Esteban.7hmuvc5ga9.pdb": "sha256-S0x9xcBt+EBPXVYb61fJ9IDiyxnMkCpzf/FCjMC/r6M="
+      "Esteban.yvgx9eql4p.pdb": "sha256-vlSe/c0gn9p2t6bU/fKzyMpRMjsf0BVFjpc3lmwb+0c="
     }
   },
   "cacheBootResources": true,

@@ -1,0 +1,36 @@
+@using blazorappdemo
+@using static System.Runtime.InteropServices.JavaScript.JSType
+@inject IProductService productService;
+@inject IJSRuntime JSRuntime
+@inject IToastService toastService
+
+<div class="card">
+    <img class="card-img-top" src="@product.images[0]" alt="Product" loading="lazy" width="270" height="210">
+    <div class="card-body">
+        <h4><b>@product.title</b></h4>
+        <p>@product.price.ToString("C")</p>
+        <button title="Delete" class="btn btn-danger btn-delete" @onclick="@(() => DeleteProduct(product.id))">
+            <TrashIcon />
+        </button>
+    </div>
+</div>
+@code {
+    [Parameter]
+    [EditorRequired]
+    public Product product { get; set; }
+    [Parameter]
+    [EditorRequired]
+    public EventCallback GetProducts { get; set; }
+    private async Task DeleteProduct(int id)
+    {
+        if (!await JSRuntime.InvokeAsync<bool>("confirm", $"Are you sure you want to remove {product.title}"))
+            return;
+
+        await productService.Delete(id);
+
+        toastService.ShowSuccess("Producto eliminado");
+
+        await GetProducts.InvokeAsync();
+    }
+
+}

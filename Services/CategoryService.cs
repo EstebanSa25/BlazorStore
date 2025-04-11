@@ -1,15 +1,16 @@
 using System.Net.Http.Json;
 using System.Text.Json;
+using blazorappdemo;
 
 namespace blazorappdemo
 {
-    public class CategoryService{
+    public class CategoryService : ICategoryService{
         private readonly HttpClient _httpClient;
         private readonly JsonSerializerOptions _options;
-        public CategoryService(HttpClient httpClient, JsonSerializerOptions options)
+        public CategoryService(HttpClient httpClient)
         {
             _httpClient = httpClient;
-            _options = options;
+            _options = new JsonSerializerOptions {PropertyNameCaseInsensitive = true};
         }
 
          public async Task<List<Category>?> Get (){
@@ -27,4 +28,7 @@ namespace blazorappdemo
             if(!response.IsSuccessStatusCode) throw new ApplicationException(content);
         }
     }
+}
+public interface ICategoryService{
+    Task<List<Category>?> Get ();
 }

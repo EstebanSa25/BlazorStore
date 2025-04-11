@@ -1,3 +1,5 @@
+@import '_content/Blazored.Toast/Blazored.Toast.bundle.scp.css';
+
 /* /Layout/MainLayout.razor.rz.scp.css */
 .page[b-jjrq4vtook] {
     position: relative;
@@ -159,4 +161,16 @@ main[b-jjrq4vtook] {
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
     }
+}
+/* /Pages/Products/Products.razor.rz.scp.css */
+.products-container[b-wslfl89mgm] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 3em;
+}
+
+.card[b-wslfl89mgm] {
+    width: 20%;
 }

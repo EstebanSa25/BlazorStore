@@ -1,0 +1,11 @@
+.products-container[b-wslfl89mgm] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 3em;
+}
+
+.card[b-wslfl89mgm] {
+    width: 20%;
+}

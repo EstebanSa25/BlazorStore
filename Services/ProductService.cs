@@ -1,16 +1,18 @@
 using System.Net.Http.Json;
 using System.Text.Json;
+using blazorappdemo;
 
 namespace blazorappdemo
 {
-    public class ProductService{
+    public class ProductService : IProductService{
         private readonly HttpClient _httpClient;
         private readonly JsonSerializerOptions _options;
 
-        public ProductService(HttpClient httpClient, JsonSerializerOptions options)
+        public ProductService(HttpClient httpClient)
         {
             _httpClient = httpClient;
-            _options = options;
+            _options = new JsonSerializerOptions {PropertyNameCaseInsensitive = true};
+
         }
         public async Task<List<Product>?> Get (){
             var response=await _httpClient.GetAsync("v1/products");
@@ -21,10 +23,16 @@ namespace blazorappdemo
             var content=await response.Content.ReadAsStringAsync();
             if(!response.IsSuccessStatusCode) throw new ApplicationException(content);
         }
-        public async Task Delete (string id){
+        public async Task Delete (int id){
             var response=await _httpClient.DeleteAsync($"v1/products/{id}");
             var content=await response.Content.ReadAsStringAsync();
             if(!response.IsSuccessStatusCode) throw new ApplicationException(content);
         }
     }
+}
+public interface IProductService{
+    Task<List<Product>?> Get ();
+    Task Add(Product product);
+    Task Delete (int id);
+
 }
